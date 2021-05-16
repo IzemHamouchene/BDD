@@ -1,1 +1,3 @@
-SELECT cust_name FROM dbo.customers WHERE customerId = 1
+SELECT cust_name
+FROM dbo.customers
+WHERE customerId = 1
