@@ -16,7 +16,7 @@
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -d master -i /app/query.sql",
       "input": "",
-      "output": "",
+      "output": "Tom B. Erichsen",
       "comparison": "included",
       "timeout": 10,
       "points": 10
