@@ -10,9 +10,8 @@
       "timeout": 10,
       "points": 10
     },
-
     {
-      "name": "Check query file runs",
+      "name": "Check Users",
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -d master -i /app/query.sql",
       "input": "",
@@ -21,8 +20,6 @@
       "timeout": 10,
       "points": 10
     },
-    
-    
     {
       "name": "Check database exists",
       "setup": "",
