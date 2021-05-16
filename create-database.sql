@@ -31,4 +31,7 @@ CREATE TABLE dbo.customers (
     );
 GO
 
+INSERT INTO dbo.customers VALUES (1, 'Tom B. Erichsen', 'Alger');
+GO
+
 
