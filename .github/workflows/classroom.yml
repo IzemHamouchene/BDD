@@ -91,6 +91,9 @@
             # if: ${{ steps.autograder.outcome == 'failure' }}
             # if: ${{ failure }}
             run: exit 1
+            
+          - name: display Autograder
+            run: echo ${{steps.autograder}};
 
       reformat-sql:
         runs-on: ubuntu-latest
