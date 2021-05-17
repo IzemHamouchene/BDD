@@ -105,6 +105,7 @@
             uses: credfeto/action-sql-format@master
 
           - run: cat create-database.sql
+          - run: cat query.sql
 
           - name: Commit files
             run: |
