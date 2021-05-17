@@ -1,3 +1,4 @@
+USE SimpleDB 
 SELECT cust_name
-FROM SimpleDB.customers
+FROM customers
 WHERE id = 1
