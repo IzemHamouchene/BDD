@@ -32,4 +32,4 @@
                         
           - name: check autograder pass fail
             if: ${{ steps.autograder.outcome != 'success' }}
-            run: echo  ${{ steps.autograder.outcome.error}} || echo  ${{ steps.autograder.error}} || exit 1
+            run: echo  ${{ steps.autograder.outcome}} || echo  ${{ steps.autograder.error}} || exit 1
