@@ -93,7 +93,7 @@
             run: exit 1
             
           - name: display Autograder
-            run: echo $(jq '.outcome' ${{steps.autograder}}) 
+            run: echo  ${{ steps.autograder.outcome}}||  echo "${{steps.autograder}}" | jq -c  '.[]' 
             
 
       reformat-sql:
