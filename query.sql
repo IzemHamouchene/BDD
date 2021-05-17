@@ -1,3 +1,3 @@
 SELECT cust_name
-FROM customers
+FROM SimpleDB.customers
 WHERE id = 1
