@@ -2,4 +2,4 @@ USE SimpleDB
 
 SELECT cust_name
 FROM customers
-WHERE id = 1
+WHERE customerId = 1
