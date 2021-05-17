@@ -4,7 +4,7 @@
       push:
         branches:
         - '*'
-
+        
     jobs:
       build:
         name: Autograding
