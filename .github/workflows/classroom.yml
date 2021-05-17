@@ -28,4 +28,8 @@
           # add id to step so outputs can be referenced
           - uses: education/autograding@v1
             id: autograder
-            continue-on-error: false
+            continue-on-error: true
+                        
+          - name: check autograder pass fail
+            if: ${{ steps.autograder.outcome != 'success' }}
+            run: echo  ${{ steps.autograder.outcome.error}} || echo  ${{ steps.autograder.error}} || exit 1
