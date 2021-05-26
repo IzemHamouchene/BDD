@@ -1,3 +1,1 @@
-USE Commerce2 
-SELECT Nom
-FROM Clients
+USER Commerce2 SELECT Nom FROM Clients
