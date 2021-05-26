@@ -39,7 +39,8 @@ INSERT INTO Commandes
 VALUES (
     1,
     1,
-    'Fast livraison'
+    'Fast livraison',
+    'Fast Etat'
     );
 GO
 
