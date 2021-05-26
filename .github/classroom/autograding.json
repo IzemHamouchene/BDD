@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Check query file runs",
+      "name": "Check create Database",
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -d master -i /app/create-database.sql",
       "input": "",
@@ -15,7 +15,7 @@
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -d master -i /app/query.sql",
       "input": "",
-      "output": "Tom",
+      "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 10
@@ -79,6 +79,6 @@
       "comparison": "included",
       "timeout": 10,
       "points": 10
-    }
+    } 
   ]
 }
