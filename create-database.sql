@@ -14,8 +14,7 @@ GO
 CREATE TABLE clients (
     ClientID INT NOT NULL PRIMARY KEY, -- primary key column
     Nom [NVARCHAR](30) NOT NULL,
-    Prénom [NVARCHAR](20) NOT NULL,
-    Date_Naiss DATE
+    Prénom [NVARCHAR](20) NOT NULL
     );
 GO
 
