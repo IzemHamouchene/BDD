@@ -24,6 +24,6 @@ VALUES (
     'Tom',
     'Alger'
     );
-GO
+GO 
 
 
