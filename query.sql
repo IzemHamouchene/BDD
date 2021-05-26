@@ -1,5 +1,5 @@
-USE SimpleDB
+USE Commerce2
 
-SELECT cust_name
-FROM customers
-WHERE customerId = 1
+SELECT Nom
+FROM Clients
+WHERE ClientId = 1
