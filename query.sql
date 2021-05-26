@@ -12,3 +12,12 @@ CREATE TABLE Commandes (
     ETAT [NVARCHAR](20) NOT NULL
     );
 GO
+
+INSERT INTO Commandes
+VALUES (
+    1,
+    1,
+    'Tom',
+    'Alger'
+    );
+GO 
