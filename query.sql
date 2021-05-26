@@ -1,1 +1,4 @@
-USER Commerce2 SELECT Nom FROM  Clients
+USE SimpleDB
+GO
+SELECT Nom FROM  Clients
+GO
