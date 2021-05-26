@@ -38,7 +38,7 @@ GO
 INSERT INTO Commandes
 VALUES (
     1,
-    Tom,
+    1,
     'Alger',
     'Alger2',
     );
