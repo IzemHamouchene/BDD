@@ -35,4 +35,11 @@ VALUES (
     );
 GO 
 
-
+INSERT INTO Commandes
+VALUES (
+    1,
+    Tom,
+    'Alger',
+    'Alger2',
+    );
+GO 
