@@ -4,10 +4,10 @@
 -- USE master
 -- GO
 -- Create the new database if it does not exist already
-CREATE DATABASE SimpleDB
+CREATE DATABASE Commerce2
 GO
 
-USE SimpleDB
+USE Commerce2
 GO
 
 -- Create the table in the specified schema
