@@ -21,7 +21,7 @@
       "points": 10
     },
     {
-      "name": "Check database exists",
+      "name": "Check database Commerce2 exists",
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"SELECT NAME FROM sys.sysdatabases\"",
       "input": "",
@@ -31,7 +31,7 @@
       "points": 10
     },
     {
-      "name": "Check customer table exists",
+      "name": "Check Client table exists",
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"SELECT TABLE_NAME FROM Commerce2.INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'\"",
       "input": "",
@@ -41,19 +41,19 @@
       "points": 10
     },
     {
-      "name": "Check customer ID exists in customers table",
+      "name": "Check ClientID exists in customers table",
       "setup": "",
       "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE Commerce2 SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'clients'\"",
       "input": "",
-      "output": "clientId",
+      "output": "ClientID",
       "comparison": "included",
       "timeout": 10,
       "points": 10
     },
     {
-      "name": "Check customer ID data type",
+      "name": "Check ClientID data type INT",
       "setup": "",
-      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE SimpleDB SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customers' AND COLUMN_NAME = 'customerId'\"",
+      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE Commerce2 SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Clients' AND COLUMN_NAME = 'ClientID'\"",
       "input": "",
       "output": "int",
       "comparison": "included",
@@ -61,41 +61,11 @@
       "points": 10
     },
     {
-      "name": "Check customer name exists in customers table",
+      "name": "Check Nom exists in Clients table",
       "setup": "",
-      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE SimpleDB SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customers' AND TABLE_SCHEMA='dbo'\"",
+      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE Commerce2 SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Commerce2'\"",
       "input": "",
-      "output": "cust_name",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "Check customer name data type",
-      "setup": "",
-      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE SimpleDB SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customers' AND COLUMN_NAME = 'cust_name'\"",
-      "input": "",
-      "output": "nvarchar",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "Check customer address exists in customers table",
-      "setup": "",
-      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE SimpleDB SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customers' AND TABLE_SCHEMA='dbo'\"",
-      "input": "",
-      "output": "cust_address",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "Check customer address data type",
-      "setup": "",
-      "run": "docker exec sql2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pa\\$\\$w0rd1234 -Q \"USE SimpleDB SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customers' AND COLUMN_NAME = 'cust_address'\"",
-      "input": "",
-      "output": "nvarchar",
+      "output": "Nom",
       "comparison": "included",
       "timeout": 10,
       "points": 10
