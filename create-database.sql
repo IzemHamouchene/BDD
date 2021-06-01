@@ -7,7 +7,7 @@
 CREATE DATABASE Commerce2
 GO
 
-USE Commerce2
+USE Commerce2 
 GO
 
 -- Create the table in the specified schema
