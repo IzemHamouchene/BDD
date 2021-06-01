@@ -5,7 +5,7 @@
 -- GO
 -- Create the new database if it does not exist already
 CREATE DATABASE Commerce2
-GO
+GO 
 
 USE Commerce2 
 GO
